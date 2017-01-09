@@ -1,0 +1,27 @@
+{
+  "presets": [
+    "es2015",
+    "stage-2",
+    "react"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "espower",
+          {
+            "embedAst": true
+          }
+        ]
+      ],
+      "presets": [
+        "power-assert"
+      ]
+    },
+    "production": {
+      "plugins": [
+        "unassert"
+      ]
+    }
+  }
+}
